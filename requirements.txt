@@ -1,0 +1,5 @@
+ctranslate2==3.17.1
+transformers==4.29.2
+torch
+numpy
+dm-tree
