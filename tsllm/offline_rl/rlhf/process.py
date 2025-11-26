@@ -16,9 +16,9 @@ if __name__ == "__main__":
     config = parser.parse_args()
 
     all_data = []
-    for i in range(8):
-        # merge all data, you can modify the path to your save path
-        all_data.extend(load_jsonl(f"{config.input_dir}/rlhf/args0/cot_sc/{i}.jsonl"))
+    # for i in range(8):
+    #     # merge all data, you can modify the path to your save path
+    all_data.extend(load_jsonl(f"{config.input_dir}/rlhf/args0/cot_sc/0.jsonl"))
 
     d = []
     for data_dict in all_data:
