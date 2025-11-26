@@ -12,7 +12,7 @@ TOKENIZER_PATH=$2
 CRITIC_PATH="None"
 
 # also don't forget to set k_maj as 50 in test_sft_and_v_rlhf.py
-torchrun --nproc_per_node=8 --master-port 29503 ../test_sft_and_v_rlhf.py \
+torchrun --nproc_per_node=1 --master-port 29503 test_sft_and_v_rlhf.py \
     --critic_model_path $CRITIC_PATH \
     --tokenizer_path $TOKENIZER_PATH \
     --ct2_dir $CT2_CACHE \
